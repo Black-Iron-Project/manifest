@@ -55,7 +55,6 @@
   <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="pixel" />
   <project path="hardware/qcom-caf/sdm845/audio" name="hardware_qcom-caf_sdm845_audio" remote="pixel" />
   <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom-caf_sdm845_display" remote="pixel" />
-  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom-caf_sdm845_media" remote="pixel" />
   <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="pixel" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="pixel" />
   <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="pixel" />
@@ -70,9 +69,6 @@
   <project path="hardware/qcom-caf/bengal/display" name="hardware_qcom-caf_bengal_display" remote="pixel" />
   <project path="hardware/qcom-caf/bengal/gps" name="hardware_qcom-caf_bengal_gps" remote="pixel" />
   <project path="hardware/qcom-caf/bengal/media" name="hardware_qcom-caf_bengal_media" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" remote="pixel" />
-  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" remote="pixel" />
 
   <!-- Vendor repos - NXP -->
   <project path="vendor/nxp/nfc" name="vendor_nxp_nfc" remote="pixel" />
