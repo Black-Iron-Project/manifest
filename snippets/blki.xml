@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="blki"
+          fetch="https://github.com/Black-Iron-Project"
+          revision="thirteen" />
+
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS" />
+
+  <!-- BLKI repos -->
+  <project path="manifest" name="manifest" remote="blki" revision="thirteen" />
+  <project path="vendor/aosp" name="vendor_aosp" remote="blki" /> 
+  <project path="frameworks/base" name="frameworks_base" remote="blki" />
+  <project path="frameworks/av" name="frameworks_av" remote="blki" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blki" />
+  <project path="packages/apps/BlackironSettings" name="packages_apps_BlackironSettings" remote="blki" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="blki" /> 
+  <project path="vendor/overlays" name="vendor_overlays" remote="blki"/>
+  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="blki" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="blki" />
+
+  <!-- Hardware qcom-caf -->
+  <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-20.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" remote="blki" />
+  <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" remote="lineage" revision="lineage-20.0-caf-sm8350" />
+
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.65" />
+</manifest>
