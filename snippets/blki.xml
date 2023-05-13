@@ -15,6 +15,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="blki" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="blki" />
   <project path="packages/apps/BlackironSettings" name="packages_apps_BlackironSettings" remote="blki" />
+  <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="blki" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="blki" /> 
   <project path="vendor/overlays" name="vendor_overlays" remote="blki"/>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="blki" />
