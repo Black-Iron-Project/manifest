@@ -44,11 +44,11 @@
   </project>
 
   <!-- Device -->
-  <project path="device/derp/sepolicy" name="device_derp_sepolicy" remote="derp" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,qssi" remote="derp" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" groups="qcom,sdm660" remote="derp" revision="13-legacy-um" />
-  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="derp" />
-  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="derp" revision="14-legacy-um" />
+  <project path="device/blackiron/sepolicy" name="device_blackiron_sepolicy" remote="blki" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,qssi" remote="blki" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" groups="qcom,sdm660" remote="blki" revision="u14.0-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="blki" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="blki" revision="u14.0-legacy-um" />
 
   <!-- External -->
   <project path="external/gptfdisk" name="external_gptfdisk" remote="derp" />
