@@ -78,6 +78,11 @@
   <remove-project name="device/sample" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
+  <remove-project name="device/google/zuma" />
+  <remove-project name="device/google/zuma-sepolicy" />
+  <remove-project name="device/google/shusky" />
+  <remove-project name="device/google/shusky-sepolicy" />
+  <remove-project name="device/google/shusky-kernel" />
 
   <!-- External -->
   <remove-project name="platform/external/gptfdisk" />
