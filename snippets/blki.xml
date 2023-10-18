@@ -56,10 +56,10 @@
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="derp" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
 
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="derp" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="blki" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="derp" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="derp" />
 
   <!-- hardware repos -->
@@ -140,8 +140,10 @@
   <project path="system/logging" name="system_logging" groups="pdk" remote="derp" />
   <project path="system/media" name="system_media" groups="pdk" remote="derp" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="blki" />
+  <project path="system/security" name="system_security" groups="pdk" remote="blki" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="derp" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" groups="pdk" remote="derp" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="blki" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="blki" />
 
   <!-- Vendor -->
