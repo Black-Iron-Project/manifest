@@ -60,7 +60,7 @@
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="blki" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="derp" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="blki" />
 
   <!-- hardware repos -->
   <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="derp" revision="13-caf" />
@@ -121,27 +121,27 @@
   <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp-13" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="blki" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs" remote="blki" />
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="derp" />
-  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="blki" />
-  <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="blki" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" groups="pdk-fs" remote="derp-13" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="blki" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="blki" />
 
   <!-- System -->
   <project path="system/core" name="system_core" groups="pdk" remote="blki" />
-  <project path="system/extras" name="system_extras" groups="pdk" remote="derp" />
+  <project path="system/extras" name="system_extras" groups="pdk" remote="blki" />
   <project path="system/libhidl" name="system_libhidl" groups="pdk" remote="derp" />
   <project path="system/logging" name="system_logging" groups="pdk" remote="derp" />
-  <project path="system/media" name="system_media" groups="pdk" remote="derp" />
+  <project path="system/media" name="system_media" groups="pdk" remote="blki" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="blki" />
   <project path="system/security" name="system_security" groups="pdk" remote="blki" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="derp" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blki" />
   <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" groups="pdk" remote="derp" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="blki" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="blki" />
