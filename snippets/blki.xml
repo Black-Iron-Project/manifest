@@ -52,10 +52,10 @@
 
   <!-- External -->
   <project path="external/gptfdisk" name="external_gptfdisk" remote="derp" />
+  <project path="external/libnl" name="external_libnl" remote="blki" />  
   <project path="external/mksh" name="external_mksh" remote="derp" />  
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="derp" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
-
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="frameworks/libs/net" name="frameworks_libs_net" remote="blki" />
