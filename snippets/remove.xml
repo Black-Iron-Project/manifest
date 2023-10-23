@@ -84,6 +84,8 @@
   <remove-project name="device/google/shusky-sepolicy" />
   <remove-project name="device/google/shusky-kernel" />
 
+  <remove-project name="kernel/configs" />
+
   <!-- External -->
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/mksh" />

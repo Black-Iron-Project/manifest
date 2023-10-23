@@ -50,6 +50,8 @@
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="blki" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="blki" revision="u14.0-legacy-um" />
 
+  <project path="kernel/configs" name="kernel_configs" remote="blki" />
+
   <!-- External -->
   <project path="external/gptfdisk" name="external_gptfdisk" remote="derp" />
   <project path="external/libnl" name="external_libnl" remote="blki" />  
