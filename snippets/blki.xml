@@ -19,6 +19,10 @@
            fetch="https://github.com/DerpFest-AOSP"
            revision="13" />
 
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience-Staging"
+          revision="fourteen"
+          review="gerrit-staging.pixelexperience.org" />
 
   <!-- BlackIron -->
   <!-- Rootdir -->
@@ -76,6 +80,8 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150-common/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150-common/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
@@ -98,9 +104,13 @@
   <project path="hardware/qcom-caf/sdm845/audio" name="hardware_qcom_audio" groups="qcom,sdm845" remote="derp" revision="14-caf-sdm845" />
   <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sdm845" />
   <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media" groups="qcom,sdm845" remote="derp" revision="14-caf-sdm845" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom_audio" groups="qcom,msmnile" remote="derp" revision="14-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom_media" groups="qcom,msmnile" remote="derp" revision="14-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150-common/audio" name="hardware_qcom-caf_sm8150-common_audio" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150-common/display" name="hardware_qcom-caf_sm8150-common_display" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150-common/gps" name="hardware_qcom-caf_sm8150-common_gps" remote="pixel" />
+  <project path="hardware/qcom-caf/sm8150-common/media" name="hardware_qcom-caf_sm8150-common_media" remote="pixel" />
   <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom_audio" groups="qcom,kona" remote="derp" revision="14-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sm8250" />
   <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom_media" groups="qcom,kona" remote="derp" revision="14-caf-sm8250" />
@@ -132,7 +142,7 @@
   <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" groups="pdk-fs" remote="derp-13" />
+  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" remote="pixel" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="blki" />
 
