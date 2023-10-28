@@ -25,7 +25,7 @@
   <project path="vendor/overlays" name="vendor_overlays" remote="blki"/>
   <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="blki" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="blki" />
-  <project path="system/core" name="system_core" remote="blki" />
+  <project path="system/core" name="system_core_old" remote="blki" />
 
   <!-- Hardware qcom-caf -->
   <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" remote="lineage" revision="lineage-20.0-caf-sm8350" />
