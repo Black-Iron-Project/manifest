@@ -212,6 +212,6 @@
   <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="derp" />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,kailua-vendor" remote="derp" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="vendor_qcom_opensource_wfd-commonsys" groups="qcom,kailua-video" remote="derp" />
-  <project path="vendor/support" name="vendor_support" remote="derp" />
+  <project path="vendor/support" name="vendor_support" remote="blki" />
 
 </manifest>
