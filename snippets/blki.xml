@@ -27,6 +27,7 @@
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="blki" />
   <project path="development" name="development" groups="developers,pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="libcore" name="libcore" remote="blki" />
   <project path="manifest" name="manifest" remote="blki" />
 
   <!-- Bootable -->
