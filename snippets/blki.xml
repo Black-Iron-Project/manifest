@@ -73,16 +73,16 @@
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="derp" />
   <project path="external/zstd" name="external_zstd" remote="derp" />
 
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="derp" />
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="derp" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
   <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="derp" />
   <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="derp" />
 
   <!-- Hardware repos -->
-  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="derp" />
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="blki" />
   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="derp" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="derp" />
   <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="derp" revision="14-caf" />
@@ -175,7 +175,7 @@
 
   <!-- System -->
   <project path="system/bpf" name="system_bpf" groups="pdk" remote="derp" />
-  <project path="system/core" name="system_core" groups="pdk" remote="derp" />
+  <project path="system/core" name="system_core" groups="pdk" remote="blki" />
   <project path="system/extras" name="system_extras" groups="pdk" remote="derp" />
   <project path="system/libhidl" name="system_libhidl" groups="pdk" remote="derp" />
   <project path="system/libsysprop" name="system_libsysprop" groups="pdk" remote="derp" />
