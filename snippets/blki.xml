@@ -19,14 +19,9 @@
            fetch="https://github.com/DerpFest-AOSP"
            revision="13" />
 
-  <remote  name="derp-devices"
-           fetch="https://github.com/DerpFest-Devices"
-           revision="14" />
-
   <!-- BlackIron -->
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="blki" />
-  <project path="development" name="development" groups="developers,pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="libcore" name="libcore" remote="blki" />
   <project path="manifest" name="manifest" remote="blki" />
 
@@ -50,9 +45,8 @@
 
   <!-- Device -->
   <project path="device/blackiron/sepolicy" name="device_blackiron_sepolicy" remote="blki" />
-  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" groups="qcom,qssi" remote="derp" />
   <!--
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" groups="qcom,sdm660" remote="derp" revision="13-legacy-um" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" groups="qcom,sdm660" remote="blki" revision="13-legacy-um" />
   -->
   <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="derp" revision="14-legacy-um" />
   <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="derp" revision="14-caf-sm8450" />
@@ -60,20 +54,14 @@
   <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="derp" />
 
   <!-- External -->
-  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" groups="qcom,qssi" remote="derp" />
-  <project path="external/avb" name="external_avb" groups="pdk" remote="derp" />
-  <project path="external/dtc" name="external_dtc" groups="pdk" remote="derp" />
   <project path="external/exfatprogs" name="external_exfatprogs" remote="derp" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="derp" />
-  <project path="external/json-c" name="external_json-c" groups="qcom,qssi" remote="derp" />
-  <project path="external/libvpx" name="external_libvpx" groups="pdk" remote="derp" />
   <project path="external/mksh" name="external_mksh" remote="derp" />  
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="derp" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
-  <project path="external/webp" name="external_webp" groups="pdk,qcom_msm8x26" remote="derp" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="derp" />
-  <project path="external/zstd" name="external_zstd" remote="derp" />
 
+  <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
@@ -86,15 +74,17 @@
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="blki" />
   <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="derp" />
   <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="derp" />
+  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="derp" />
   <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="derp" revision="14-caf" />
+  <project path="hardware/qcom-caf/bt" name="hardware_qcom_bt" groups="qcom,legacy-qcom" remote="derp" revision="14-caf" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="blki" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
     <!-- add guards for CAF repositories -->
     <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
-    <!--
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <!--
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
     -->
@@ -120,11 +110,10 @@
   <project path="hardware/qcom/gps" name="hardware_qcom_gps" groups="qcom,qcom_gps,pdk-qcom" remote="derp" />
   <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="derp" />
   <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="derp" />
-  <!--
-  <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" groups="qcom,legacy-qcom" remote="derp" revision="14" />
   <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom_audio" groups="qcom,legacy-qcom" remote="derp" revision="14-caf-msm8998" />
   <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom_display" groups="qcom,legacy-qcom" remote="derp" revision="14-caf-msm8998" />
   <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom_media" groups="qcom,legacy-qcom" remote="derp" revision="14-caf-msm8998" />
+  <!--
   <project path="hardware/qcom-caf/sdm660/audio" name="hardware_qcom_audio" groups="qcom,sdm660" remote="derp" revision="14-caf-sdm660" />
   <project path="hardware/qcom-caf/sdm660/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sdm660" />
   <project path="hardware/qcom-caf/sdm660/media" name="hardware_qcom_media" groups="qcom,sdm660" remote="derp" revision="14-caf-sdm660" />
@@ -145,9 +134,7 @@
   <project path="hardware/qcom-caf/sm8450/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="derp" revision="14-caf-sm8450" />
   <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom_display" groups="qcom"  remote="derp" revision="14-caf-sm8450" />
   <project path="hardware/qcom-caf/thermal" name="hardware_qcom_thermal" groups="qcom,kailua-vendor" remote="derp" />
-  <!--
   <project path="hardware/qcom-caf/vr" name="hardware_qcom_vr" groups="qcom,sdm660" remote="derp" />
-  -->
   <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" groups="qcom,kailua-vendor" remote="derp" revision="14-caf" />
   <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="derp" />
 
@@ -163,6 +150,7 @@
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" groups="pdk-fs" remote="github" revision="sc-qpr3" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs" remote="derp" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="derp" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs" remote="derp" />
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="blki" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="derp" />
@@ -190,31 +178,15 @@
   <project path="system/vold" name="system_vold" groups="pdk" remote="derp" />
 
   <!-- Vendor -->
-  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" groups="qcom,qssi" remote="derp" />
   <project path="vendor/blackiron" name="vendor_blackiron" remote="blki">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/fontage" name="vendor_fontage" remote="derp-13" />
   <project path="vendor/gms" name="DerpFest/vendor_gms" remote="gitlab" revision="14" clone-depth="1" />
   <project path="vendor/overlay" name="vendor_overlay" remote="derp" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="derp" />
-  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,kailua-audio" remote="derp" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/qcom/opensource/core-utils-sys" name="vendor_qcom_opensource_core-utils-sys" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/qcom/opensource/core-utils-vendor" name="vendor_qcom_opensource_core-utils-vendor" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" groups="qcom" remote="derp" />
-  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" remote="derp" revision="14-legacy-um" />
-  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="vendor_qcom_opensource_healthd-ext" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="derp" />
-  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" groups="qcom" remote="derp" />
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="vendor_qcom_opensource_thermal-engine" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="vendor_qcom_opensource_wfd-commonsys" groups="qcom,kailua-video" remote="derp" />
   <project path="vendor/support" name="vendor_support" remote="blki" />
+
+  <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" groups="qcom" remote="derp" />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="derp" />
 
 </manifest>

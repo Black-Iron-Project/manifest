@@ -5,16 +5,29 @@
            fetch="https://github.com/LineageOS"
            revision="refs/heads/lineage-21.0" />
 
+  <!-- Rootdir -->
+  <project path="development" name="android_development" groups="developers,pdk-cw-fs,pdk-fs" remote="lineage" />
+
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,qssi" remote="lineage" />
+
   <!-- External -->
+  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" groups="qcom,qssi" remote="lineage" />
   <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" groups="qcom,sdm660" remote="lineage" />
   <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" groups="qcom,sdm660" remote="lineage" />
   <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" groups="qcom,sdm660" remote="lineage" />
+  <project path="external/avb" name="android_external_avb" groups="pdk" remote="lineage" />
   <project path="external/bash" name="android_external_bash" remote="lineage" />
+  <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" />
   <project path="external/htop" name="android_external_htop" remote="lineage" />
+  <project path="external/json-c" name="android_external_json-c" groups="qcom,qssi" remote="lineage" />
   <project path="external/libncurses" name="android_external_libncurses" remote="lineage" />
+  <project path="external/libvpx" name="android_external_libvpx" groups="pdk" remote="lineage" />
   <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="lineage" />
   <project path="external/rsync" name="android_external_rsync" remote="lineage" />
   <project path="external/unrar" name="android_external_unrar" remote="lineage" />
+  <project path="external/webp" name="android_external_webp" groups="pdk,qcom_msm8x26" remote="lineage" />
+  <project path="external/zstd" name="android_external_zstd" remote="lineage" />
 
   <!-- Hardware -->
   <project path="hardware/qcom-caf/sm8450/audio/pal" name="android_vendor_qcom_opensource_arpal-lx" groups="qcom,waipio-vendor" remote="lineage" revision="lineage-20.0-caf-sm8450" />
@@ -28,8 +41,8 @@
   <project path="hardware/qcom-caf/sm8550/display" name="android_hardware_qcom_display" groups="qcom" remote="lineage" revision="lineage-21.0-caf-sm8550" />
   <project path="hardware/qcom-caf/sm8550/media" name="android_hardware_qcom_media" groups="qcom,kailua-vendor" remote="lineage" revision="lineage-21.0-caf-sm8550" />
 
-  <!-- Lineage HALs -->
-  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="lineage" />
+  <!-- LiveDisplay -->
+  <project path="hardware/lineage/livedisplay" name="android_hardware_lineage_livedisplay" remote="lineage" />
 
   <!-- Prebuilts -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" clone-depth="1" remote="lineage" />
@@ -48,5 +61,30 @@
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="lineage" />
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="refs/tags/android-13.0.0_r0.117" />
 
+  <!-- Vendor -->
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="lineage" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="lineage" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,kailua-audio" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="lineage" />
+  <project path="vendor/qcom/opensource/commonsys/wfd" name="android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,kailua-video" remote="lineage" />
+  <project path="vendor/qcom/opensource/core-utils-sys" name="android_vendor_qcom_opensource_core-utils-sys" groups="qcom,qssi" remote="lineage" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="android_vendor_qcom_opensource_core-utils-vendor" groups="qcom,kailua-vendor" remote="lineage" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" remote="lineage" revision="lineage-21.0-legacy-um" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" groups="qcom,kailua-vendor" remote="lineage" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" groups="qcom,kailua-vendor" remote="lineage" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="lineage" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" groups="qcom" remote="lineage" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,kailua-vendor" remote="lineage" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,kailua-vendor" remote="lineage" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,kailua-vendor" remote="lineage" />
+
+  <!-- NXP additions -->
+  <!--
+  <project path="vendor/nxp/nfc" name="android_vendor_nxp_nfc" groups="nxp" remote="lineage" />
+  <project path="vendor/nxp/secure_element" name="android_vendor_nxp_secure_element" groups="nxp" remote="lineage" />
+  <project path="vendor/nxp/secure_element_extns" name="android_vendor_nxp_secure_element_extns" groups="nxp" remote="lineage" />
+  -->
 
 </manifest>
