@@ -143,9 +143,11 @@
   <project path="packages/apps/DerpLauncher" name="packages_apps_DerpLauncher" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp-13" />
   <project path="packages/apps/Flash" name="packages_apps_Flash" groups="pdk-fs" remote="blki" />
+  <project path="packages/apps/Panic" name="packages_apps_Panic" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blki" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp-13" />
+  <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" groups="pdk-fs" remote="github" revision="sc-qpr3" />
