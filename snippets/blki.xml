@@ -185,7 +185,7 @@
   </project>
   <project path="vendor/fontage" name="vendor_fontage" remote="derp-13" />
   <project path="vendor/gms" name="DerpFest/vendor_gms" remote="gitlab" revision="14" clone-depth="1" />
-  <project path="vendor/overlay" name="vendor_overlay" remote="derp" />
+  <project path="vendor/overlay" name="vendor_overlays" remote="blki" />
   <project path="vendor/support" name="vendor_support" remote="blki" />
 
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" groups="qcom" remote="derp" />
