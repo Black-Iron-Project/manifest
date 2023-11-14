@@ -163,7 +163,7 @@
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" groups="pdk-fs" remote="derp-13" />
   <project path="packages/services/Iwlan" name="packages_services_Iwlan" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="derp" />
 
   <!-- System -->
