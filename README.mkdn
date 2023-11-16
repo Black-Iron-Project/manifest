@@ -1,10 +1,11 @@
 # Black Iron Project #
 <img src="https://imgur.com/rUip0he.jpg">
 
-A Small Description of the Iron V3 (V1 is IRON Los & V2 IronOS Project, V3 and V4 BlackIron Project)
+A Small Description of the Iron V4.X
 ----------------------------------
 
-xxx
+This time for the A14 version (V4.x) I didn't want to start from any basis other than the AOSP one
+Feel free to build and have fun with the BLKI!!
 
 Credits
 -------
