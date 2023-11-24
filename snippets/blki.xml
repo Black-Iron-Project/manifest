@@ -11,6 +11,10 @@
            fetch="https://github.com/Black-Iron-Project"
            revision="u14" />
 
+  <remote  name="yaap"
+           fetch="https://github.com/yaap"
+           revision="fourteen" />
+
   <remote  name="derp"
            fetch="https://github.com/DerpFest-AOSP"
            revision="14" />
@@ -66,9 +70,9 @@
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
   <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="derp" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="yaap" />
   <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="yaap" />
 
   <!-- Hardware repos -->
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="blki" />
@@ -144,7 +148,7 @@
   <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp-13" />
   <project path="packages/apps/Panic" name="packages_apps_Panic" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blki" />
-  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="yaap" />
   <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp-13" />
   <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki" />
@@ -170,7 +174,7 @@
   <project path="system/core" name="system_core" groups="pdk" remote="blki" />
   <project path="system/extras" name="system_extras" groups="pdk" remote="derp" />
   <project path="system/libhidl" name="system_libhidl" groups="pdk" remote="derp" />
-  <project path="system/libsysprop" name="system_libsysprop" groups="pdk" remote="derp" />
+  <project path="system/libsysprop" name="system_libsysprop" groups="pdk" remote="yaap" />
   <project path="system/logging" name="system_logging" groups="pdk" remote="derp" />
   <project path="system/media" name="system_media" groups="pdk" remote="derp" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="derp" />
