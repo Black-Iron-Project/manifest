@@ -52,16 +52,16 @@
   <!--
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" groups="qcom,sdm660" remote="blki" revision="13-legacy-um" />
   -->
-  <project path="device/qcom/sepolicy_vndr/legacy-um" name="device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="derp" revision="14-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="android_device_qcom_sepolicy_vndr" groups="qcom,lahaina" remote="lineage" revision="lineage-21.0-legacy-um" />
   <project path="device/qcom/sepolicy_vndr/sm8450" name="device_qcom_sepolicy_vndr" groups="qcom,waipio-vendor" remote="derp" revision="14-caf-sm8450" />
   <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" remote="derp" revision="14-caf-sm8550" />
-  <project path="kernel/configs" name="kernel_configs" groups="vts,pdk" remote="derp" />
+  <project path="kernel/configs" name="android_kernel_configs" groups="vts,pdk" remote="lineage" />
 
   <!-- External -->
-  <project path="external/exfatprogs" name="external_exfatprogs" remote="derp" />
-  <project path="external/gptfdisk" name="external_gptfdisk" remote="derp" />
-  <project path="external/mksh" name="external_mksh" remote="derp" />  
-  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="derp" />
+  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="lineage" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
+  <project path="external/mksh" name="android_external_mksh" remote="lineage" />  
+  <project path="external/tinycompress" name="android_external_tinycompress" groups="pdk" remote="lineage" />
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="derp" />
 
@@ -69,18 +69,18 @@
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
-  <project path="frameworks/opt/colorpicker" name="frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="frameworks/opt/colorpicker" name="android_frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="yaap" />
-  <project path="frameworks/opt/timezonepicker" name="frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="frameworks/opt/timezonepicker" name="android_frameworks_opt_timezonepicker" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" groups="frameworks_ims,pdk-cw-fs,pdk-fs" remote="yaap" />
 
   <!-- Hardware repos -->
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="blki" />
-  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="derp" />
-  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="derp" />
-  <project path="hardware/lineage/interfaces" name="hardware_lineage_interfaces" remote="derp" />
-  <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="derp" revision="14-caf" />
-  <project path="hardware/qcom-caf/bt" name="hardware_qcom_bt" groups="qcom,legacy-qcom" remote="derp" revision="14-caf" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" groups="pdk" remote="lineage" />
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="lineage" />
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="lineage" />
+  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,waipio-vendor" remote="lineage" revision="lineage-21.0-caf" />
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" groups="qcom,legacy-qcom" remote="lineage" revision="lineage-21.0-caf" />
   <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="blki" >
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
@@ -88,10 +88,6 @@
     <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
-    <!--
-    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
-    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
-    -->
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
@@ -107,40 +103,29 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
   </project>
-  <project path="hardware/qcom/audio" name="hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="derp" />
-  <project path="hardware/qcom/camera" name="hardware_qcom_camera" groups="qcom_camera,pdk-qcom" remote="derp" />
-  <project path="hardware/qcom/data/ipacfg-mgr" name="hardware_qcom_data_ipacfg-mgr" groups="qcom,pdk-qcom" remote="derp" />
-  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="derp" />
-  <project path="hardware/qcom/gps" name="hardware_qcom_gps" groups="qcom,qcom_gps,pdk-qcom" remote="derp" />
-  <project path="hardware/qcom/media" name="hardware_qcom_media" groups="qcom,pdk-qcom" remote="derp" />
-  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="derp" />
-  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom_audio" groups="qcom,legacy-qcom" remote="derp" revision="14-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom_display" groups="qcom,legacy-qcom" remote="derp" revision="14-caf-msm8998" />
-  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom_media" groups="qcom,legacy-qcom" remote="derp" revision="14-caf-msm8998" />
-  <!--
-  <project path="hardware/qcom-caf/sdm660/audio" name="hardware_qcom_audio" groups="qcom,sdm660" remote="derp" revision="14-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm660/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sdm660" />
-  <project path="hardware/qcom-caf/sdm660/media" name="hardware_qcom_media" groups="qcom,sdm660" remote="derp" revision="14-caf-sdm660" />
-  -->
-  <project path="hardware/qcom-caf/sdm845/audio" name="hardware_qcom_audio" groups="qcom,sdm845" remote="derp" revision="14-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sdm845" />
-  <project path="hardware/qcom-caf/sdm845/media" name="hardware_qcom_media" groups="qcom,sdm845" remote="derp" revision="14-caf-sdm845" />
-  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom_audio" groups="qcom,msmnile" remote="derp" revision="14-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom_media" groups="qcom,msmnile" remote="derp" revision="14-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom_audio" groups="qcom,kona" remote="derp" revision="14-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom_media" groups="qcom,kona" remote="derp" revision="14-caf-sm8250" />
-  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom_audio" groups="qcom,lahaina" remote="derp" revision="14-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom_display" groups="qcom" remote="derp" revision="14-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom_media" groups="qcom,lahaina" remote="derp" revision="14-caf-sm8350" />
-  <project path="hardware/qcom-caf/sm8450/audio/agm" name="vendor_qcom_opensource_agm" groups="qcom,waipio-vendor" remote="derp" revision="14-caf-sm8450" />
-  <project path="hardware/qcom-caf/sm8450/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="derp" revision="14-caf-sm8450" />
-  <project path="hardware/qcom-caf/sm8450/display" name="hardware_qcom_display" groups="qcom"  remote="derp" revision="14-caf-sm8450" />
-  <project path="hardware/qcom-caf/thermal" name="hardware_qcom_thermal" groups="qcom,kailua-vendor" remote="derp" />
-  <project path="hardware/qcom-caf/vr" name="hardware_qcom_vr" groups="qcom,sdm660" remote="derp" />
-  <project path="hardware/qcom-caf/wlan" name="hardware_qcom_wlan" groups="qcom,kailua-vendor" remote="derp" revision="14-caf" />
-  <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="derp" />
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom_camera,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="android_hardware_qcom_data_ipacfg-mgr" groups="qcom,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="lineage" />
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" remote="lineage" />
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" groups="qcom,msmnile" remote="lineage" revision="lineage-21.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" groups="qcom" remote="lineage" revision="lineage-21.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" groups="qcom,msmnile" remote="lineage" revision="lineage-21.0-caf-sm8150" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="android_hardware_qcom_audio" groups="qcom,kona" remote="lineage" revision="lineage-21.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/display" name="android_hardware_qcom_display" groups="qcom" remote="lineage" revision="lineage-21.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8250/media" name="android_hardware_qcom_media" groups="qcom,kona" remote="lineage" revision="lineage-21.0-caf-sm8250" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="android_hardware_qcom_audio" groups="qcom,lahaina" remote="lineage" revision="lineage-21.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/display" name="android_hardware_qcom_display" groups="qcom" remote="lineage" revision="lineage-21.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8350/media" name="android_hardware_qcom_media" groups="qcom,lahaina" remote="lineage" revision="lineage-21.0-caf-sm8350" />
+  <project path="hardware/qcom-caf/sm8450/audio/agm" name="android_vendor_qcom_opensource_agm" groups="qcom,waipio-vendor" remote="lineage" revision="lineage-21.0-caf-sm8450" />
+  <project path="hardware/qcom-caf/sm8450/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,waipio-vendor" remote="lineage" revision="lineage-21.0-caf-sm8450" />
+  <project path="hardware/qcom-caf/sm8450/display" name="android_hardware_qcom_display" groups="qcom"  remote="lineage" revision="lineage-21.0-caf-sm8450" />
+  <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom_thermal" groups="qcom,kailua-vendor" remote="lineage" />
+  <project path="hardware/qcom-caf/vr" name="android_hardware_qcom_vr" groups="qcom,sdm660" remote="lineage" />
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom,kailua-vendor" remote="lineage" revision="lineage-21.0-caf" />
+  <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="lineage" />
 
   <!-- Packages -->
   <project path="packages/apps/BlackironSettings" name="packages_apps_BlackironSettings" groups="pdk-fs" remote="blki" />
@@ -160,25 +145,25 @@
   <project path="packages/modules/adb" name="packages_modules_adb" groups="pdk" remote="blki" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="derp" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="derp" />
-  <project path="packages/resources/devicesettings" name="packages_resources_devicesettings" groups="pdk-fs" remote="derp-13" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" groups="pdk-fs" remote="lineage" />
   <project path="packages/services/Iwlan" name="packages_services_Iwlan" groups="pdk-cw-fs,pdk-fs" remote="derp" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="derp" />
 
   <!-- System -->
-  <project path="system/bpf" name="system_bpf" groups="pdk" remote="derp" />
+  <project path="system/bpf" name="android_system_bpf" groups="pdk" remote="lineage" />
   <project path="system/core" name="system_core" groups="pdk" remote="blki" />
-  <project path="system/extras" name="system_extras" groups="pdk" remote="derp" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="lineage" />
   <project path="system/libhidl" name="system_libhidl" groups="pdk" remote="derp" />
   <project path="system/libsysprop" name="system_libsysprop" groups="pdk" remote="yaap" />
   <project path="system/logging" name="system_logging" groups="pdk" remote="derp" />
-  <project path="system/media" name="system_media" groups="pdk" remote="derp" />
+  <project path="system/media" name="android_system_media" groups="pdk" remote="lineage" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="derp" />
-  <project path="system/tools/mkbootimg" name="system_tools_mkbootimg" groups="pdk" remote="derp" />
+  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" groups="pdk" remote="lineage" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="derp" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="derp" />
 
@@ -192,6 +177,6 @@
   <project path="vendor/support" name="vendor_support" remote="blki" />
 
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" groups="qcom" remote="derp" />
-  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="derp" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="lineage" />
 
 </manifest>
