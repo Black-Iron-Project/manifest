@@ -19,10 +19,6 @@
            fetch="https://github.com/DerpFest-AOSP"
            revision="14" />
 
-  <remote  name="derp-13"
-           fetch="https://github.com/DerpFest-AOSP"
-           revision="13" />
-
   <!-- BlackIron -->
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="blki" />
@@ -130,11 +126,11 @@
   <!-- Packages -->
   <project path="packages/apps/BlackironSettings" name="packages_apps_BlackironSettings" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/DerpLauncher" name="packages_apps_DerpLauncher" groups="pdk-fs" remote="derp" />
-  <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp-13" />
+  <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="blki" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blki" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="yaap" />
-  <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp-13" />
+  <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp" />
   <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
@@ -172,7 +168,7 @@
   <project path="vendor/blackiron" name="vendor_blackiron" remote="blki">
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
-  <project path="vendor/fontage" name="vendor_fontage" remote="derp-13" />
+  <project path="vendor/fontage" name="vendor_fontage" remote="derp" />
 <!--  <project path="vendor/gms" name="ralf979/vendor_gms" remote="gitlab" revision="u14" clone-depth="1" /> -->
   <project path="vendor/overlay" name="vendor_overlays" remote="blki" />
   <project path="vendor/support" name="vendor_support" remote="blki" />
