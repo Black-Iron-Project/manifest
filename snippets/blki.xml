@@ -173,7 +173,7 @@
     <linkfile src="build/stop_scan.mk" dest="kernel/Android.mk" />
   </project>
   <project path="vendor/fontage" name="vendor_fontage" remote="derp-13" />
-  <project path="vendor/gms" name="ralf979/vendor_gms" remote="gitlab" revision="u14" clone-depth="1" />
+<!--  <project path="vendor/gms" name="ralf979/vendor_gms" remote="gitlab" revision="u14" clone-depth="1" /> -->
   <project path="vendor/overlay" name="vendor_overlays" remote="blki" />
   <project path="vendor/support" name="vendor_support" remote="blki" />
 
