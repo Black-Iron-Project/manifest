@@ -125,10 +125,10 @@
 
   <!-- Packages -->
   <project path="packages/apps/BlackironSettings" name="packages_apps_BlackironSettings" groups="pdk-fs" remote="blki" />
-  <project path="packages/apps/DerpLauncher" name="packages_apps_DerpLauncher" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/DerpWalls" name="packages_apps_DerpWalls" groups="pdk-fs" remote="derp" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="blki" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blki" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blki" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="yaap" />
   <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp" />
   <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="blki" />
