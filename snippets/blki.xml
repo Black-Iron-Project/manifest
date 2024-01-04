@@ -64,6 +64,7 @@
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="blki" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="yaap" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
   <project path="frameworks/opt/colorpicker" name="android_frameworks_opt_colorpicker" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="yaap" />
