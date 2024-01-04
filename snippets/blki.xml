@@ -176,4 +176,7 @@
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" groups="qcom" remote="derp" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="lineage" />
 
+  <project path="vendor/google/gms" name="YAAP/vendor_google_gms" remote="gitlab" revision="fourteen" clone-depth="1" />
+  <project path="vendor/google/pixel" name="YAAP/vendor_google_pixel" remote="gitlab" revision="fourteen" clone-depth="1" />
+
 </manifest>
