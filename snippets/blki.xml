@@ -151,6 +151,8 @@
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="blki" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="yaap" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="derp" />
+
 
   <!-- System -->
   <project path="system/bpf" name="android_system_bpf" groups="pdk" remote="lineage" />
