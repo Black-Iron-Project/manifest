@@ -151,6 +151,8 @@
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="blki" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="blki" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="yaap" />
+  <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="derp" />
+
 
   <!-- System -->
   <project path="system/bpf" name="android_system_bpf" groups="pdk" remote="lineage" />
@@ -177,7 +179,8 @@
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" groups="qcom" remote="derp" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="lineage" />
 
-  <project path="vendor/google/gms" name="YAAP/vendor_google_gms" remote="gitlab" revision="fourteen" clone-depth="1" />
-  <project path="vendor/google/pixel" name="YAAP/vendor_google_pixel" remote="gitlab" revision="fourteen" clone-depth="1" />
+  <project path="vendor/google/gms" name="yaosp/vendor_google_gms" remote="gitlab" revision="fourteen" />
+  <project path="vendor/google/pixel" name="yaosp/vendor_google_pixel" remote="gitlab" revision="fourteen" />
+ 
 
 </manifest>
