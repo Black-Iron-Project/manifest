@@ -131,7 +131,6 @@
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="blki" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="blki" />
   <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" groups="pdk-cw-fs,pdk-fs" remote="yaap" />
-  <project path="packages/apps/Prospect" name="packages_apps_Prospect" remote="derp" />
   <project path="packages/apps/Ripple" name="packages_apps_Ripple" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" groups="pdk-fs" remote="derp" />
