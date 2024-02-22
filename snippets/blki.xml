@@ -19,6 +19,12 @@
            fetch="https://github.com/DerpFest-AOSP"
            revision="14" />
 
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/14.0" />
+
   <!-- BlackIron -->
   <!-- Rootdir -->
   <project path="bionic" name="bionic" groups="pdk" remote="blki" />
@@ -180,8 +186,7 @@
   <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display" groups="qcom" remote="derp" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="lineage" />
 
-  <project path="vendor/google/gms" name="ThankYouMario/android_vendor_google_gms" remote="gitlab" revision="uvite" />
-  <project path="vendor/google/pixel" name="yaosp/vendor_google_pixel" remote="gitlab" revision="fourteen" />
+  <project path="vendor/gapps" name="projectmatrixx/android_vendor_gapps" remote="bitbucket" />
  
 
 </manifest>
