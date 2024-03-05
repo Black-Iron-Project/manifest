@@ -55,7 +55,7 @@ To initialize your local repository use
 ### Initialize local repository ###
 
 ```bash
-repo init -u https://github.com/Black-Iron-Project/manifest -b u14
+repo init -u https://github.com/Black-Iron-Project/manifest -b u14_qpr2
 ```
  or you can do a shallow clone if you dont't have much bandwidth
 ```bash
