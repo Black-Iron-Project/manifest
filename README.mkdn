@@ -83,9 +83,9 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 $ . build/envsetup.sh
 
 # Choose a target
-$ lunch blackiron_$device-userdebug
+$ lunch lineage_$device-userdebug
 
 # Build the code
-$ mka blackiron -jX
+$ mka bacon -jX
 ```
 
