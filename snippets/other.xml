@@ -13,6 +13,12 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/14.0" />
+
   <!-- CrDroid -->
   <project path="build/bazel" name="crdroidandroid/android_build_bazel" groups="pdk" remote="crdroid" >
     <linkfile dest="WORKSPACE" src="bazel.WORKSPACE" />
@@ -60,5 +66,8 @@
   <project path="system/vold" name="crdroidandroid/android_system_vold" groups="pdk" remote="crdroid" />
 
   <project path="toolchain/pgo-profiles" name="crdroidandroid/android_toolchain_pgo-profiles" groups="pdk" remote="crdroid" />
+
+  <!-- Project Matrixx -->
+  <project path="vendor/gapps" name="projectmatrixx/android_vendor_gapps" remote="bitbucket" />
 
 </manifest>
