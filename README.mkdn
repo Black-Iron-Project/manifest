@@ -55,11 +55,11 @@ To initialize your local repository use
 ### Initialize local repository ###
 
 ```bash
-repo init -u https://github.com/Black-Iron-Staging/manifest -b u14_QPR2 --git-lfs
+repo init -u https://github.com/Black-Iron-Project/manifest -b u14_QPR2 --git-lfs
 ```
  or you can do a shallow clone if you dont't have much bandwidth
 ```bash
-repo init -u https://github.com/Black-Iron-Staging/manifest -b u14_QPR2 --depth=1
+repo init -u https://github.com/Black-Iron-Project/manifest -b u14_QPR2 --depth=1
 ```
 Shallow clone lets you pull down just the latest commits, not the entire repo history. So if your project has years of history, or history from thousands of commits, you can select a particular depth to pull.
 
