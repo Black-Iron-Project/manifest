@@ -40,7 +40,6 @@
   <project path="frameworks/base" name="Black-Iron-Project/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio"  remote="blki" revision="u14_QPR2" />
   <project path="frameworks/libs/systemui" name="Black-Iron-Project/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio"  remote="blki" revision="u14_QPR2" />
   <project path="frameworks/native" name="Black-Iron-Project/frameworks_native" groups="pdk"  remote="blki" revision="u14_QPR2" />
-  <project path="frameworks/opt/telephony" name="Black-Iron-Project/frameworks_opt_telephony" groups="pdk"  remote="blki" revision="u14_QPR2" />
 
   <project path="packages/apps/BlackironSettings" name="Black-Iron-Project/packages_apps_BlackironSettings" groups="pdk-fs"  remote="blki" revision="u14_QPR2" />
   <project path="packages/apps/GameSpace" name="Black-Iron-Project/packages_apps_GameSpace"  remote="blki" revision="u14_QPR2" />

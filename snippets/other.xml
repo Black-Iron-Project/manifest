@@ -20,52 +20,10 @@
            revision="refs/heads/14.0" />
 
   <!-- CrDroid -->
-  <project path="build/bazel" name="crdroidandroid/android_build_bazel" groups="pdk" remote="crdroid" >
-    <linkfile dest="WORKSPACE" src="bazel.WORKSPACE" />
-    <linkfile dest="BUILD" src="bazel.BUILD" />
-  </project>
-
-  <project path="external/arm-optimized-routines" name="crdroidandroid/android_external_arm-optimized-routines" groups="pdk" remote="crdroid" />
-  <project path="external/boringssl" name="crdroidandroid/android_external_boringssl" groups="pdk" remote="crdroid" />
   <project path="external/FadingEdgeLayout" name="crdroidandroid/android_external_FadingEdgeLayout" remote="crdroid" />
-  <project path="external/giflib" name="crdroidandroid/android_external_giflib" groups="pdk,qcom_msm8x26" remote="crdroid" />
-  <project path="external/jemalloc_new" name="crdroidandroid/android_external_jemalloc-new" groups="pdk" remote="crdroid" />
-  <project path="external/perfetto" name="crdroidandroid/android_external_perfetto" groups="pdk,sysui-studio" remote="crdroid" />
-  <project path="external/rust/crates/ring" name="crdroidandroid/android_external_rust_crates_ring" groups="pdk" remote="crdroid" />
-  <project path="external/setupcompat" name="crdroidandroid/android_external_setupcompat" groups="pdk,sysui-studio" remote="crdroid" />
-  <project path="external/sqlite" name="crdroidandroid/android_external_sqlite" groups="pdk" remote="crdroid" />
-
-  <project path="hardware/qcom-caf/sm8150/audio" name="crdroidandroid/android_hardware_qcom_audio" groups="qcom,msmnile" revision="14.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="crdroidandroid/android_hardware_qcom_display" groups="qcom" revision="14.0-caf-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="crdroidandroid/android_hardware_qcom_media" groups="qcom,msmnile" revision="14.0-caf-sm8150" />
-
-  <project path="packages/apps/Contacts" name="crdroidandroid/android_packages_apps_Contacts" groups="pdk-fs" remote="crdroid" />
-  <project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" groups="pdk-fs" remote="crdroid" />
   <project path="packages/apps/FaceUnlock" name="crdroidandroid/android_packages_apps_FaceUnlock" remote="crdroid-gitlab" />
-  <project path="packages/apps/Matlog" name="crdroidandroid/android_packages_apps_Matlog" remote="crdroid" />
-  <project path="packages/apps/Messaging" name="crdroidandroid/android_packages_apps_Messaging" groups="pdk-fs" remote="crdroid" />
-  <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="crdroid" />
   <project path="packages/apps/OmniStyle" name="crdroidandroid/android_packages_apps_OmniStyle" remote="crdroid" />
-  <project path="packages/apps/ThemePicker" name="crdroidandroid/android_packages_apps_ThemePicker" groups="pdk-fs" remote="crdroid" />
-  <project path="packages/apps/WallpaperPicker2" name="crdroidandroid/android_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="crdroid" />
-  <project path="packages/inputmethods/LatinIME" name="crdroidandroid/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="crdroid" />
-  <project path="packages/modules/Bluetooth" name="crdroidandroid/android_packages_modules_Bluetooth" groups="pdk" remote="crdroid" />
-  <project path="packages/modules/Connectivity" name="crdroidandroid/android_packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
-  <project path="packages/modules/Permission" name="crdroidandroid/android_packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
-  <project path="packages/modules/StatsD" name="crdroidandroid/android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
-  <project path="packages/modules/Virtualization" name="crdroidandroid/android_packages_modules_Virtualization" groups="pdk" remote="crdroid" />
-  <project path="packages/modules/Wifi" name="crdroidandroid/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="crdroid" />
-  <project path="packages/services/Telecomm" name="crdroidandroid/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
-
-  <project path="prebuilts/build-tools" name="crdroidandroid/android_prebuilts_build-tools" groups="pdk,sysui-studio" remote="crdroid" />
-
-  <project path="system/hardware/interfaces" name="crdroidandroid/android_system_hardware_interfaces" groups="pdk,sysui-studio" remote="crdroid" />
-  <project path="system/netd" name="crdroidandroid/android_system_netd" groups="pdk" remote="crdroid" />
   <project path="system/sepolicy" name="crdroidandroid/android_system_sepolicy" groups="pdk" remote="crdroid" />
-  <project path="system/update_engine" name="crdroidandroid/android_system_update_engine" groups="pdk" remote="crdroid" />
-  <project path="system/vold" name="crdroidandroid/android_system_vold" groups="pdk" remote="crdroid" />
-
-  <project path="toolchain/pgo-profiles" name="crdroidandroid/android_toolchain_pgo-profiles" groups="pdk" remote="crdroid" />
 
   <!-- Project Matrixx -->
   <project path="vendor/gapps" name="projectmatrixx/android_vendor_gapps" remote="bitbucket" />
