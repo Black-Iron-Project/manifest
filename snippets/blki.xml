@@ -11,6 +11,7 @@
   <project path="manifest" name="Black-Iron-Project/manifest"  remote="blki" revision="u14_QPR3" />
 
   <!-- General -->
+  <project path="lineage-sdk" name="Black-Iron-Project/lineage-sdk" remote="blki" revision="u14_QPR3" />
 
   <!-- Bootable -->
   <project path="bootable/recovery" name="Black-Iron-Project/bootable_recovery" groups="pdk" remote="blki" revision="u14_QPR3" />
