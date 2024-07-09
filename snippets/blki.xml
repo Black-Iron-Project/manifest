@@ -33,6 +33,7 @@
   <!-- Frameworks -->
   <project path="frameworks/av" name="Black-Iron-Project/frameworks_av" groups="pdk" remote="blki" revision="u14_QPR3" />
   <project path="frameworks/base" name="Black-Iron-Project/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" revision="u14_QPR3" />
+  <project path="frameworks/libs/systemui" name="Black-Iron-Project/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" revision="u14_QPR3" />
   <project path="frameworks/native" name="Black-Iron-Project/frameworks_native" groups="pdk" remote="blki" revision="u14_QPR3" />
 
   <!-- Packages -->
