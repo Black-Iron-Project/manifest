@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="blki"
+           fetch="https://github.com/"
+           sync-c="true"
+           sync-j="4"
+           revision="refs/heads/u14_QPR3" />
+
+  <!-- BLKI additions -->
+  <project path="manifest" name="Black-Iron-Project/manifest"  remote="blki" revision="u14_QPR3" />
+
+  <!-- General -->
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="Black-Iron-Project/bootable_recovery" groups="pdk" remote="blki" revision="u14_QPR3" />
+
+  <!-- Build -->
+  <project path="build/make" name="Black-Iron-Project/build" groups="pdk,sysui-studio" remote="blki" revision="u14_QPR3" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="Black-Iron-Project/build_soong" groups="pdk,tradefed" remote="blki" revision="u14_QPR3" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="Black-Iron-Project/frameworks_av" groups="pdk" remote="blki" revision="u14_QPR3" />
+  <project path="frameworks/base" name="Black-Iron-Project/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" revision="u14_QPR3" />
+  <project path="frameworks/native" name="Black-Iron-Project/frameworks_native" groups="pdk" remote="blki" revision="u14_QPR3" />
+
+  <!-- Packages -->
+  <project path="packages/apps/BlackironSettings" name="Black-Iron-Project/packages_apps_BlackironSettings" groups="pdk-fs"  remote="blki" revision="u14" />
+  <project path="packages/apps/GameSpace" name="Black-Iron-Project/packages_apps_GameSpace"  remote="blki" revision="u14" />
+  <project path="packages/apps/Launcher3" name="Black-Iron-Project/packages_apps_Launcher3" groups="pdk-fs,sysui-studio"  remote="blki" revision="u14_QPR3" />
+  <project path="packages/apps/LineageParts" name="Black-Iron-Project/packages_apps_LineageParts" remote="blki" revision="u14_QPR3" />
+  <project path="packages/apps/Settings" name="Black-Iron-Project/packages_apps_Settings" groups="pdk-fs" remote="blki" revision="u14_QPR3" />
+  <project path="packages/apps/SetupWizard" name="Black-Iron-Project/packages_apps_SetupWizard" remote="blki" revision="u14_QPR3" />
+  <project path="packages/services/OmniJaws" name="Black-Iron-Project/packages_services_OmniJaws"  remote="blki" revision="u14" />
+
+  <!-- System -->
+  <project path="system/core" name="Black-Iron-Project/system_core" groups="pdk" revision="u14_QPR3" />
+
+  <!-- Vendor -->
+  <project path="vendor/addons" name="Black-Iron-Project/vendor_addons"  remote="blki" revision="u14" />
+  <project path="vendor/lineage" name="Black-Iron-Project/vendor_blackiron"  remote="blki" revision="u14_QPR3" />
+
+</manifest>

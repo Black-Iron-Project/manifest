@@ -1,36 +1,91 @@
-LineageOS
-===========
+# Black Iron Project #
+<img src="https://imgur.com/rUip0he.jpg">
 
-Getting started
----------------
+A Small Description of the Iron V4.X
+----------------------------------
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+This time for the A14 version (V4.x) I didn't want to start from any basis other than the AOSP one
+Feel free to build and have fun with the BLKI!!
 
-To initialize your local repository using the LineageOS trees, use a command like this:
-```
-repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
-```
-Then to sync up:
-```
-repo sync
-```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
+Credits
+-------
+- CyanogenMod/LineageOS
+- Derpfest
+- AICP
+- AOSiP
+- AOSPA
+- BootleggersROM
+- CrDroid
+- DirtyUnicorns
+- NitrogenOS
+- OmniROM
+- PixelExperience
+- Pixel Extended
+- POSP
+- RevengeOS
+- ... and my eternal friend @Bicet
 
-
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
-
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
-
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
-
-
-Buildbot
+### For Building
 --------
 
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
+Create dirs, and install soft, libs
+-----------------------------------
 
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
+    sudo su
+    apt update
+    apt install repo git gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 libncurses5 rsync lib32ncurses-dev x11proto-core-dev libx11-dev lib32z1-dev libgl1-mesa-dev libxml2-utils xsltproc unzip fontconfig
+    exit
 
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+Create BlackIron folder
+----------------------------------
+
+    mkdir ~/BlackIron
+    cd ~/BlackIron
+
+GIT config (nickname, e-mail)
+-----------------------------
+
+    git config --global user.email "mail@domain.com"
+    git config --global user.name "login"
+
+To initialize your local repository use
+---------------------------------------
+
+
+### Initialize local repository ###
+
+```bash
+repo init -u https://github.com/Black-Iron-Project/manifest -b u14_QPR3 --git-lfs
+```
+ or you can do a shallow clone if you dont't have much bandwidth
+```bash
+repo init -u https://github.com/Black-Iron-Project/manifest -b u14_QPR3 --depth=1
+```
+Shallow clone lets you pull down just the latest commits, not the entire repo history. So if your project has years of history, or history from thousands of commits, you can select a particular depth to pull.
+
+So if we are providing argument of `-- depth 1` to the repo init command it will copy only the latest revision of a repo.
+
+### Sync ###
+
+```bash
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+You can just use `repo sync` or above command, but this will save you from lot of terminal spam, data and time.
+```bash
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+```
+
+### Build ###
+
+```bash
+
+# Set up environment
+$ . build/envsetup.sh
+
+# Choose a target
+$ lunch lineage_$device-userdebug
+
+# Build the code
+$ mka bacon -jX
+```
+
