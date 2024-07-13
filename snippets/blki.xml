@@ -11,6 +11,8 @@
   <project path="manifest" name="Black-Iron-Project/manifest"  remote="blki" revision="u14_QPR3" />
 
   <!-- General -->
+  <project path="art" name="Black-Iron-Project/art" groups="pdk" remote="blki" revision="u14_QPR3" />
+  <project path="bionic" name="Black-Iron-Project/bionic" groups="pdk" remote="blki" revision="u14_QPR3" />
   <project path="lineage-sdk" name="Black-Iron-Project/lineage-sdk" remote="blki" revision="u14_QPR3" />
 
   <!-- Bootable -->
@@ -30,11 +32,17 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Device -->
+  <project path="device/lineage/sepolicy" name="Black-Iron-Project/device_blackiron_sepolicy" remote="blki" revision="u14_QPR3" />
+
   <!-- Frameworks -->
   <project path="frameworks/av" name="Black-Iron-Project/frameworks_av" groups="pdk" remote="blki" revision="u14_QPR3" />
   <project path="frameworks/base" name="Black-Iron-Project/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" revision="u14_QPR3" />
   <project path="frameworks/libs/systemui" name="Black-Iron-Project/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" revision="u14_QPR3" />
   <project path="frameworks/native" name="Black-Iron-Project/frameworks_native" groups="pdk" remote="blki" revision="u14_QPR3" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="Black-Iron-Project/hardware_interfaces" groups="pdk,sysui-studio" remote="blki" revision="u14_QPR3" />
 
   <!-- Packages -->
   <project path="packages/apps/BlackironSettings" name="Black-Iron-Project/packages_apps_BlackironSettings" groups="pdk-fs"  remote="blki" revision="u14" />
@@ -44,6 +52,7 @@
   <project path="packages/apps/Settings" name="Black-Iron-Project/packages_apps_Settings" groups="pdk-fs" remote="blki" revision="u14_QPR3" />
   <project path="packages/apps/SetupWizard" name="Black-Iron-Project/packages_apps_SetupWizard" remote="blki" revision="u14_QPR3" />
   <project path="packages/services/OmniJaws" name="Black-Iron-Project/packages_services_OmniJaws"  remote="blki" revision="u14" />
+  <project path="packages/apps/Updater" name="Black-Iron-Project/packages_apps_Updater" remote="blki" revision="u14"  />
 
   <!-- System -->
   <project path="system/core" name="Black-Iron-Project/system_core" groups="pdk" revision="u14_QPR3" />
