@@ -4,8 +4,7 @@
 A Small Description of the Iron V4.X
 ----------------------------------
 
-This time for the A14 version (V4.x) I didn't want to start from any basis other than the AOSP one
-Feel free to build and have fun with the BLKI!!
+This ROM is a LineageOS so it will follow all its developments. I just added the features that I think are useful for my use of the device. Since I worked on it, I thought I'd share the work with those who make the same use of the device as me !! Good building.
 
 Credits
 -------
