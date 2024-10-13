@@ -34,6 +34,7 @@
 
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="Black-Iron-Project/device_blackiron_sepolicy" remote="blki" revision="u14_QPR3" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="ralf979/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-21.0-caf-sm8550" />
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="Black-Iron-Project/frameworks_av" groups="pdk" remote="blki" revision="u14_QPR3" />
