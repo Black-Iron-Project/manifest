@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="blki-staging"
-           fetch="https://github.com/"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/v15" />
+  <remote name="blki-staging"
+          fetch="https://github.com/Black-Iron-Staging/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/v15" />
+
+  <remote name="blki"
+          fetch="https://github.com/Black-Iron-Project/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/v15" />
 
   <!-- BLKI additions -->
-  <project path="manifest" name="Black-Iron-Staging/manifest"  remote="blki-staging" revision="v15" />
+  <project path="manifest" name="manifest"  remote="blki-staging" />
+
+  <!-- Art  -->
+  <project path="art" name="art" groups="pdk" remote="blki" />
 
   <!-- General -->
 
   <!-- Bootable -->
 
   <!-- Build -->
-  <project path="build/make" name="Black-Iron-Staging/build" groups="pdk,sysui-studio" revision="v15" >
+  <project path="build/make" name="build" groups="pdk,sysui-studio" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -23,26 +32,26 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="Black-Iron-Staging/build_soong" groups="pdk,tradefed" revision="v15" >
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!-- Device -->
-  <project path="device/lineage/sepolicy" name="Black-Iron-Staging/device_blackiron_sepolicy" revision="v15" />
+  <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" />
 
   <!-- Frameworks -->
-<!--  <project path="frameworks/base" name="Black-Iron-Staging/frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" revision="v15" /> -->
+<!--  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" /> -->
 
   <!-- Hardware -->
 
   <!-- Packages -->
 
   <!-- System -->
-  <project path="system/sepolicy" name="Black-Iron-Staging/system_sepolicy" groups="pdk" revision="v15" />
-  <project path="system/core" name="Black-Iron-Staging/system_core-new" groups="pdk" revision="v15" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" />
+  <project path="system/core" name="system_core-new" groups="pdk" />
 
   <!-- Vendor -->
- <project path="vendor/blackiron" name="Black-Iron-Staging/vendor_blackiron" revision="v15" />
- <project path="vendor/lineage" name="Black-Iron-Staging/vendor_lineage" revision="v15" />
+ <project path="vendor/blackiron" name="vendor_blackiron" />
+ <project path="vendor/lineage" name="vendor_lineage" />
 
 </manifest>
