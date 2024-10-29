@@ -19,8 +19,10 @@
   <!-- General -->
   <project path="art" name="art" groups="pdk" remote="blki" />
   <project path="bionic" name="bionic" groups="pdk" remote="blki" />
+<!--  <project path="lineage-sdk" name="lineage-sdk" remote="blki" /> -->
 
   <!-- Bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="blki" />
 
   <!-- Build -->
   <project path="build/make" name="build" groups="pdk,sysui-studio" remote="blki-staging" >
@@ -37,11 +39,16 @@
   </project>
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" remote="blki-staging" />
+<!--  <project path="device/qcom/sepolicy_vndr/sm8550" name="ralf979/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-21.0-caf-sm8550" /> -->
 
   <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
 <!--  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" /> -->
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki"/>
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
 
   <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="blki" />
 
   <!-- Packages -->
 
