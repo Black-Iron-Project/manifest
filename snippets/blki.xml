@@ -39,6 +39,7 @@
 
   <!-- System -->
   <project path="system/sepolicy" name="Black-Iron-Staging/system_sepolicy" groups="pdk" revision="v15" />
+  <project path="system/core" name="Black-Iron-Staging/system_core-new" groups="pdk" revision="v15" />
 
   <!-- Vendor -->
  <project path="vendor/blackiron" name="Black-Iron-Staging/vendor_blackiron" revision="v15" />
