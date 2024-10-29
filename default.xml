@@ -1398,5 +1398,6 @@
 
   <include name="snippets/blki.xml" />
   <include name="snippets/lineage.xml" />
+  <include name="snippets/other.xml" />
   <include name="snippets/pixel.xml" />
 </manifest>
