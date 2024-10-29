@@ -41,6 +41,7 @@
   <project path="system/sepolicy" name="Black-Iron-Staging/system_sepolicy" groups="pdk" revision="v15" />
 
   <!-- Vendor -->
- <project path="vendor/lineage" name="Black-Iron-Staging/vendor_blackiron" revision="v15" />
+ <project path="vendor/blackiron" name="Black-Iron-Staging/vendor_blackiron" revision="v15" />
+ <project path="vendor/lineage" name="Black-Iron-Staging/vendor_lineage" revision="v15" />
 
 </manifest>
