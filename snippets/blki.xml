@@ -16,15 +16,14 @@
   <!-- BLKI additions -->
   <project path="manifest" name="manifest"  remote="blki-staging" />
 
-  <!-- Art  -->
-  <project path="art" name="art" groups="pdk" remote="blki" />
-
   <!-- General -->
+  <project path="art" name="art" groups="pdk" remote="blki" />
+  <project path="bionic" name="bionic" groups="pdk" remote="blki" />
 
   <!-- Bootable -->
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk,sysui-studio" >
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="blki-staging" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -32,12 +31,12 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" >
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="blki-staging" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!-- Device -->
-  <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" />
+  <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" remote="blki-staging" />
 
   <!-- Frameworks -->
 <!--  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" /> -->
@@ -47,11 +46,11 @@
   <!-- Packages -->
 
   <!-- System -->
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" />
-  <project path="system/core" name="system_core-new" groups="pdk" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blki-staging" />
+  <project path="system/core" name="system_core-new" groups="pdk" remote="blki-staging" />
 
   <!-- Vendor -->
- <project path="vendor/blackiron" name="vendor_blackiron" />
- <project path="vendor/lineage" name="vendor_lineage" />
+ <project path="vendor/blackiron" name="vendor_blackiron" remote="blki-staging" />
+ <project path="vendor/lineage" name="vendor_lineage" remote="blki-staging" />
 
 </manifest>
