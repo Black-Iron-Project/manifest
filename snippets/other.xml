@@ -5,13 +5,13 @@
            fetch="https://github.com/"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/14.0" />
+           revision="refs/heads/15.0" />
 
   <remote  name="crdroid-gitlab"
            fetch="https://gitlab.com/"
            sync-c="true"
            sync-j="4"
-           revision="refs/heads/14.0" />
+           revision="refs/heads/15.0" />
 
   <remote name="rising-gitlab"
           fetch="https://gitlab.com/RisingTechOSS/"
@@ -19,9 +19,8 @@
           sync-j="4"
           revision="refs/heads/fifteen" />
 
-<!--  <project path="external/FadingEdgeLayout" name="crdroidandroid/android_external_FadingEdgeLayout" remote="crdroid" />
+  <project path="external/FadingEdgeLayout" name="crdroidandroid/android_external_FadingEdgeLayout" remote="crdroid" />
   <project path="packages/apps/FaceUnlock" name="crdroidandroid/android_packages_apps_FaceUnlock" remote="crdroid-gitlab" />
   <project path="packages/apps/OmniStyle" name="crdroidandroid/android_packages_apps_OmniStyle" remote="crdroid" />
--->
   <project path="vendor/gms" name="android_vendor_gms" clone-depth="1" remote="rising-gitlab" />
 </manifest>
