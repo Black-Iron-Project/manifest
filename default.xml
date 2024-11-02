@@ -274,12 +274,12 @@
   <project path="external/junit-params" name="platform/external/junit-params" groups="pdk" remote="aosp" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk" remote="aosp" />
   <project path="external/kmod" name="platform/external/kmod" groups="pdk" remote="aosp" />
-  <project path="external/kotlinc" name="platform/external/kotlinc" groups="pdk" remote="aosp" />
+  <project path="external/kotlinc" name="LineageOS/android_external_kotlinc" groups="pdk" />
   <project path="external/kotlinpoet" name="platform/external/kotlinpoet" groups="pdk" remote="aosp" />
   <project path="external/kotlinx.atomicfu" name="platform/external/kotlinx.atomicfu" groups="pdk" remote="aosp" />
-  <project path="external/kotlinx.coroutines" name="platform/external/kotlinx.coroutines" groups="pdk" remote="aosp" />
+  <project path="external/kotlinx.coroutines" name="LineageOS/android_external_kotlinx.coroutines" groups="pdk" />
   <project path="external/kotlinx.metadata" name="platform/external/kotlinx.metadata" groups="pdk" remote="aosp" />
-  <project path="external/kotlinx.serialization" name="platform/external/kotlinx.serialization" groups="pdk" remote="aosp" />
+  <project path="external/kotlinx.serialization" name="LineageOS/android_external_kotlinx.serialization" groups="pdk" />
   <project path="external/ktfmt" name="platform/external/ktfmt" groups="pdk,sysui-studio" remote="aosp" />
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk" remote="aosp" />
   <project path="external/ksp" name="platform/external/ksp" groups="pdk" remote="aosp" />
