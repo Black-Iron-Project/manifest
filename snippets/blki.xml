@@ -53,6 +53,7 @@
   <!-- Packages -->
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio"  remote="blki" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="blki" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws"  remote="blki" />
 
   <!-- System -->
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blki-staging" />
