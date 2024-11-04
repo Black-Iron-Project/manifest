@@ -61,6 +61,7 @@
   <project path="system/core" name="system_core-new" groups="pdk" remote="blki-staging" />
 
   <!-- Vendor -->
+ <project path="vendor/addons" name="vendor_addons" remote="blki" />
  <project path="vendor/blackiron" name="vendor_blackiron" remote="blki-staging" />
  <project path="vendor/lineage" name="vendor_lineage" remote="blki-staging" />
 
