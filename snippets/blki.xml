@@ -51,9 +51,10 @@
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="blki" />
 
   <!-- Packages -->
-  <project path="packages/apps/BlackironSettings" name="Black-Iron-Project/packages_apps_BlackironSettings" groups="pdk-fs"  remote="blki" revision="u14" />
+  <project path="packages/apps/BlackironSettings" name="packages_apps_BlackironSettings" groups="pdk-fs"  remote="blki" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio"  remote="blki" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="blki" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki-staging" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws"  remote="blki" />
 
   <!-- System -->
