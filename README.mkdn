@@ -22,6 +22,7 @@ Credits
 - Pixel Extended
 - POSP
 - RevengeOS
+- RisingOS
 - ... and my eternal friend @Bicet
 
 ### For Building
@@ -59,8 +60,40 @@ repo init -u https://github.com/Black-Iron-Staging/manifest -b v15 --git-lfs
 ### Sync ###
 
 ```bash
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
+You can just use `repo sync` or above command, but this will save you from lot of terminal spam, data and time.
+```bash
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+```
+
+GMS Flags
+---------------
+```bash
+# GMS build flags
+# ship with GMS packages, replaces default AOSP packages with Google manufactured packages.
+WITH_GMS := true/false
+
+# These flags needs WITH_GMS set to true
+# for more information about core GMS flags, please see vendor/gms/common/common-vendor.mk
+# ships core GMS components that are needed to run GMS environment
+TARGET_CORE_GMS := true/false
+
+# extra add-ons for core GMS builds
+# List of add-ons
+# PRODUCT_PACKAGES += \
+#    Photos \
+#    MarkupGoogle \
+#    LatinIMEGooglePrebuilt \
+#    AiWallpapers \
+#    WallpaperEmojiPrebuilt \
+#    PrebuiltDeskClockGoogle \
+#    CalculatorGooglePrebuilt \
+#    CalendarGooglePrebuilt \
+#    Velvet
+TARGET_CORE_GMS_EXTRAS := true/false
+```
+
 ### Build ###
 
 ```bash
@@ -69,10 +102,10 @@ repo sync
 $ . build/envsetup.sh
 
 # Choose a target
-$ lunch lineage_$device-ap3a-userdebug
+$ blkilunch $device $build_type (for example - blkilunch raphael userdebug)
 
 # Build the code
-$ mka bacon -jX
+$ blki b
 ```
 
 
