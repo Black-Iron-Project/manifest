@@ -13,6 +13,12 @@
           sync-j="4"
           revision="refs/heads/v15" />
 
+  <remote name="ralf-gitlab"
+          fetch="https://gitlab.com/ralf979/"
+          sync-c="true"
+          sync-j="4"
+          revision="refs/heads/v15" />
+
   <!-- BLKI additions -->
   <project path="manifest" name="manifest"  remote="blki-staging" />
 
@@ -66,5 +72,6 @@
  <project path="vendor/addons" name="vendor_addons" remote="blki" />
  <project path="vendor/blackiron" name="vendor_blackiron" remote="blki-staging" />
  <project path="vendor/lineage" name="vendor_lineage" remote="blki-staging" />
+ <project path="vendor/gms" name="android_vendor_gms" clone-depth="1" remote="ralf-gitlab" />
 
 </manifest>
