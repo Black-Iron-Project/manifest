@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="clover"
+           fetch="https://github.com/The-Clover-Project"
+           sync-c="true"
+           sync-j="4"
+           revision="16" />
+
+  <remote  name="clover-gitlab"
+           fetch="https://gitlab.com/thecloverproject"
+           sync-c="true"
+           sync-j="4"
+           revision="16" />
+
+  <!-- Clover -->
+  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="clover" />
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="clover" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="clover-gitlab" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="clover" />
+  <project path="packages/libraries/BlurView" name="packages_libraries_BlurView" remote="clover" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="clover" />
+
+</manifest>

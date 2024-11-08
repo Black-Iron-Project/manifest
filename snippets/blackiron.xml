@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="blki"
+           fetch="https://github.com/Black-Iron-Project"
+           sync-c="true"
+           sync-j="4"
+           revision="sixteen" />
+
+  <remote  name="blki-gitlab"
+           fetch="https://gitlab.com/ralf979"
+           sync-c="true"
+           sync-j="4"
+           revision="sixteen" />
+
+  <!-- art -->
+  <project path="art" name="art" groups="pdk" remote="blki" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" groups="pdk" remote="blki" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk-cw" remote="blki" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="blki" />
+
+  <!-- build -->
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="blki" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/release" name="build_release" groups="pdk,tradefed,sysui-studio" remote="blki" />
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="blki" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- external -->
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="blki" />
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="blki" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
+
+  <!-- manifest -->
+  <project path="manifest" name="manifest" remote="blki" />
+
+  <!-- packages -->
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="blki" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="blki" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="blki" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="blki" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="blki" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="blki" />
+
+  <!-- sepolicy -->
+  <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" remote="blki" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" groups="pdk" remote="blki" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blki" />
+
+  <!-- vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="blki" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="blki" />
+  <project path="vendor/blackiron" name="vendor_blackiron" remote="blki" />
+  <project path="vendor/gms" name="vendor_gms" remote="blki-gitlab" clone-depth="1" />
+
+</manifest>

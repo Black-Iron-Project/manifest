@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-16.0.0_r2"
            remote="aosp"
@@ -1020,6 +1020,12 @@
   <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" groups="trusty,pdk">
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
+
+  <!-- Black Iron Project -->
+  <include name="snippets/remove.xml"/>
+  <include name="snippets/lineage.xml"/>
+  <include name="snippets/blackiron.xml"/>
+  <include name="snippets/extra.xml"/>
   <!-- END open-source projects -->
 
 </manifest>
