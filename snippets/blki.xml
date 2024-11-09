@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="blki-staging"
-          fetch="https://github.com/Black-Iron-Staging/"
-          sync-c="true"
-          sync-j="4"
-          revision="refs/heads/v15" />
-
   <remote name="blki"
           fetch="https://github.com/Black-Iron-Project/"
           sync-c="true"
@@ -20,7 +14,7 @@
           revision="refs/heads/v15" />
 
   <!-- BLKI additions -->
-  <project path="manifest" name="manifest"  remote="blki-staging" />
+  <project path="manifest" name="manifest"  remote="blki" />
 
   <!-- General -->
   <project path="art" name="art" groups="pdk" remote="blki" />
@@ -31,7 +25,7 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="blki" />
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="blki-staging" >
+  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="blki" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -39,12 +33,12 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="blki-staging" >
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="blki" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <!-- Device -->
-  <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" remote="blki-staging" />
+  <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" remote="blki" />
 <!--  <project path="device/qcom/sepolicy_vndr/sm8550" name="ralf979/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-21.0-caf-sm8550" /> -->
 
   <!-- Frameworks -->
@@ -61,18 +55,18 @@
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace"  remote="blki" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio"  remote="blki" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="blki" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki-staging" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="blki" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws"  remote="blki" />
 
   <!-- System -->
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blki-staging" />
-  <project path="system/core" name="system_core-new" groups="pdk" remote="blki-staging" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blki" />
+  <project path="system/core" name="system_core-new" groups="pdk" remote="blki" />
 
   <!-- Vendor -->
  <project path="vendor/addons" name="vendor_addons" remote="blki" />
- <project path="vendor/blackiron" name="vendor_blackiron" remote="blki-staging" />
- <project path="vendor/lineage" name="vendor_lineage" remote="blki-staging" />
+ <project path="vendor/blackiron" name="vendor_blackiron" remote="blki" />
+ <project path="vendor/lineage" name="vendor_lineage" remote="blki" />
  <project path="vendor/gms" name="android_vendor_gms" clone-depth="1" remote="ralf-gitlab" />
 
 </manifest>
