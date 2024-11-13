@@ -67,6 +67,6 @@
  <project path="vendor/addons" name="vendor_addons" remote="blki" />
  <project path="vendor/blackiron" name="vendor_blackiron" remote="blki" />
  <project path="vendor/lineage" name="vendor_lineage" remote="blki" />
- <project path="vendor/gms" name="android_vendor_gms" clone-depth="1" remote="ralf-gitlab" />
+ <project path="vendor/google/gms" name="vendor_google_gms" clone-depth="1" remote="ralf-gitlab" />
 
 </manifest>
