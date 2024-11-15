@@ -13,14 +13,7 @@
            sync-j="4"
            revision="refs/heads/15.0" />
 
-  <remote  name="yaap-gitlab"
-           fetch="https://gitlab.com/"
-           sync-c="true"
-           sync-j="4"
-           revision="refs/heads/fifteen" />
-
   <project path="external/FadingEdgeLayout" name="crdroidandroid/android_external_FadingEdgeLayout" remote="crdroid" />
   <project path="packages/apps/FaceUnlock" name="crdroidandroid/android_packages_apps_FaceUnlock" remote="crdroid-gitlab" />
   <project path="packages/apps/OmniStyle" name="crdroidandroid/android_packages_apps_OmniStyle" remote="crdroid" />
-  <project path="vendor/google/pixel" name="yaosp/vendor_google_pixel" clone-depth="1" remote="yaap-gitlab" />
 </manifest>
