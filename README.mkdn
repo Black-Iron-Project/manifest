@@ -1,5 +1,7 @@
 # Black Iron Project #
-<img src="https://imgur.com/rUip0he.jpg">
+<p align="center">
+<img src="https://github.com/Black-Iron-Project/manifest/blob/v15/BLKI_banner.png">
+</p>
 
 A Small Description of the Iron V5.X
 ----------------------------------
