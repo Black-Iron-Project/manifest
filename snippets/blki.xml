@@ -5,7 +5,7 @@
           fetch="https://github.com/Black-Iron-Project/"
           sync-c="true"
           sync-j="4"
-          revision="refs/heads/v15" />
+          revision="refs/heads/v15_QPR1" />
 
   <remote name="ralf-gitlab"
           fetch="https://gitlab.com/ralf979/"
