@@ -68,7 +68,7 @@
  <project path="vendor/addons" name="vendor_addons" remote="blki" />
  <project path="vendor/blackiron" name="vendor_blackiron" remote="blki" />
  <project path="vendor/lineage" name="vendor_lineage" remote="blki" />
- <!-- <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="blki" /> -->
+ <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="blki" />
  <project path="vendor/gapps" name="android_vendor_gapps" clone-depth="1" remote="ralf-gitlab" />
 
 </manifest>
