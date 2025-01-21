@@ -108,6 +108,9 @@ $ blkilunch $device $build_type (for example - blkilunch raphael userdebug)
 
 # Build the code
 $ blki b
+
+# For Fastboot Package use:
+$ blki fb
 ```
 
 
