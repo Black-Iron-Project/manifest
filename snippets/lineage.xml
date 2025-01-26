@@ -171,7 +171,6 @@
   <project path="hardware/qcom-caf/sm8550/dataipa" name="LineageOS/android_vendor_qcom_opensource_dataipa" groups="qcom,kailua-vendor" revision="lineage-22.1-caf-sm8550" />
   <project path="hardware/qcom-caf/sm8550/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" revision="lineage-22.1-caf-sm8550" />
   <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,lanai-vendor" />
-  <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" groups="qcom,legacy-qcom" />
   <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom,lanai-vendor" revision="lineage-22.1-caf" />
   <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" />
