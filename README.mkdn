@@ -76,24 +76,8 @@ GMS Flags
 # ship with GMS packages, replaces default AOSP packages with Google manufactured packages.
 WITH_GMS := true/false
 
-# These flags needs WITH_GMS set to true
-# for more information about core GMS flags, please see vendor/gms/common/common-vendor.mk
-# ships core GMS components that are needed to run GMS environment
-TARGET_CORE_GMS := true/false
-
-# extra add-ons for core GMS builds
-# List of add-ons
-# PRODUCT_PACKAGES += \
-#    Photos \
-#    MarkupGoogle \
-#    LatinIMEGooglePrebuilt \
-#    AiWallpapers \
-#    WallpaperEmojiPrebuilt \
-#    PrebuiltDeskClockGoogle \
-#    CalculatorGooglePrebuilt \
-#    CalendarGooglePrebuilt \
-#    Velvet
-TARGET_CORE_GMS_EXTRAS := true/false
+# you can build also pico GAPPS with flag
+WITH_GMS_VARIANT := pico
 ```
 
 ### Build ###
