@@ -39,7 +39,7 @@
   </project>
   <!-- Device -->
   <project path="device/lineage/sepolicy" name="device_blackiron_sepolicy" remote="blki" />
-<!--  <project path="device/qcom/sepolicy_vndr/sm8550" name="ralf979/android_device_qcom_sepolicy_vndr" groups="qcom,kailua-vendor" revision="lineage-21.0-caf-sm8550" /> -->
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="device_qcom_sepolicy_vndr_sm8550" groups="qcom,kailua-vendor" remote="blki"/>
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="blki" />
