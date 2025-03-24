@@ -46,6 +46,7 @@
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki"/>
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="blki" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" groups="pdk,sysui-studio" remote="blki" />
 
   <!-- Hardware -->
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk,sysui-studio" remote="blki" />
@@ -59,6 +60,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="blki" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="blki" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws"  remote="blki" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="blki" />
 
   <!-- System -->
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="blki" />
