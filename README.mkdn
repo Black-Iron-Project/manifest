@@ -1,6 +1,6 @@
 # Black Iron Project #
 <p align="center">
-<img src="https://github.com/Black-Iron-Project/manifest/blob/v15_QPR1/BLKI_banner.png">
+<img src="https://github.com/Black-Iron-Project/manifest/blob/v15_QPR2/BLKI_banner.png">
 </p>
 
 A Small Description of the Iron V5.X
@@ -57,7 +57,7 @@ To initialize your local repository use
 ### Initialize local repository ###
 
 ```bash
-repo init -u https://github.com/Black-Iron-Project/manifest -b v15_QPR1 --git-lfs
+repo init -u https://github.com/Black-Iron-Project/manifest -b v15_QPR2 --git-lfs
 ```
 ### Sync ###
 
