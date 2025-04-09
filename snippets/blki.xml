@@ -65,10 +65,10 @@
   <project path="system/core" name="system_core-new" groups="pdk" remote="blki" />
 
   <!-- Vendor -->
- <project path="vendor/addons" name="vendor_addons" remote="blki" />
- <project path="vendor/blackiron" name="vendor_blackiron" remote="blki" />
- <project path="vendor/lineage" name="vendor_lineage" remote="blki" />
-<!--  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="blki" /> -->
- <project path="vendor/gapps" name="vendor_gapps_new" clone-depth="1" remote="ralf-gitlab" />
+  <project path="vendor/addons" name="vendor_addons" remote="blki" />
+  <project path="vendor/blackiron" name="vendor_blackiron" remote="blki" />
+  <project path="vendor/lineage" name="vendor_lineage" remote="blki" />
+  <!--  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="blki" /> -->
+  <project path="vendor/gapps" name="vendor_gapps_new" remote="ralf-gitlab" />
 
 </manifest>
