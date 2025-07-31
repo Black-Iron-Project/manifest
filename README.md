@@ -55,3 +55,8 @@ lunch blackiron_$devicecodename-bp2a-userdebug
 ```bash
 mka blackiron -j$(nproc --all)
 ```
+
+- For fastboot package
+```bash
+mka updatepackage -j$(nproc --all)
+```
